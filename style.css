@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Oswald&display=swap');
+/* <a href='https://www.freepik.com/vectors/background'>Background vector created by redgreystock - www.freepik.com</a> 
+<a href='https://www.freepik.com/vectors/background'>Background vector created by freepik - www.freepik.com</a>
+*/
+
+:root {
+  --primary-color: rgb(255, 92, 92);
+  --primary-variant: #ff2d2d;
+  --secondary-color: #1b9999;
+  --on-primary: rgb(250, 250, 250);
+  --on-background: rgb(66, 66, 66);
+  --on-background-alt: rgba(66, 66, 66, 0.7);
+  --background: rgb(255, 255, 255);
+  --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme='dark'] {
+  --primary-color: rgb(150, 65, 255);
+  --primary-variant: #6c63ff;
+  --secondary-color: #03dac5;
+  --on-primary: #000;
+  --on-background: rgba(255, 255, 255, 0.9);
+  --on-background-alt: rgba(255, 255, 255, 0.7);
+  --background: #121212;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+  color: var(--on-background);
+  background: url('img/bg_light.jpg') no-repeat center center/cover;
+  transition: all 0.2s ease;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 100px;
+  margin-bottom: 0;
+  font-family: 'Kaushan Script', cursive;
+}
+
+h2 {
+  font-size: 32px;
+  color: var(--on-background-alt);
+  font-weight: normal;
+}
+
+/* Navigation */
+.logo {
+  margin-right: 5rem;
+  margin-left: 3rem;
+  width: 60px;
+  height: 50px;
+}
+
+nav {
+  z-index: 10;
+  position: fixed;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+  padding: 1rem;
+  width: 100vw;
+  background: rgb(255 255 255 / 30%);
+  display: flex;
+  align-items: center;
+}
+
+.span {
+  text-align: center;
+  margin-left: 10rem;
+  font-family: 'Kaushan Script', cursive;
+}
+
+a {
+  margin-right: 25px;
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+}
+
+a:hover:not(:last-child),
+a:focus {
+  color: var(--on-background);
+  border-bottom: 3px solid;
+}
+
+/* Home Section */
+.title-group {
+  text-align: center;
+}
+
+.title-group-bg {
+  height: 20rem;
+  width: auto;
+}
+.pupyImg {
+  width: 40rem;
+  height: auto;
+}
+
+/* About Section */
+.about-container {
+  display: flex;
+}
+
+.aboutDog {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.image-container {
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-right: 25px;
+  width: auto;
+  background: var(--background);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.svg-text {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+/* Projects Section */
+.why-content {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 2rem;
+  justify-items: center;
+  width: 80%;
+}
+
+.text-box {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 3rem;
+  padding-left: 4rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transform: skewX(-12deg);
+  background: rgb(0 0 0 / 50%);
+  color: var(--on-primary);
+}
+
+.dogImg {
+  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  float: left;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transform: skewX(12deg);
+  margin-right: 2rem;
+}
+
+p {
+  margin-left: 2rem;
+  line-height: 25px;
+  transform: skewX(12deg);
+}
+
+/* Contact Section */
+.footerText {
+  font-size: 1.5rem;
+}
+
+footer {
+  position: absolute;
+}
+
+.social-icons {
+  margin-top: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  margin-right: 1rem;
+}
+
+.fab {
+  font-size: 50px;
+  /* margin-right: 50px; */
+  cursor: pointer;
+  color: var(--primary-color);
+  margin-left: 0.5rem;
+}
+
+.fab:hover {
+  color: var(--on-background);
+  border-bottom: none;
+}
+
+/* Dark Mode Toggle */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  right: 25px;
+  top: 30px;
+}
+
+.theme-switch-wrapper span {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.toggle-text {
+  position: relative;
+  top: -4px;
+  right: 5px;
+  color: var(--on-background);
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  background: #fff;
+  bottom: 4px;
+  content: '';
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background: var(--primary-color);
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+.fas {
+  font-size: 30px;
+  margin-right: 5px;
+}

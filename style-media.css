@@ -1,0 +1,123 @@
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  /* Navigation */
+  .logo {
+    display: none;
+  }
+
+  nav {
+    font-size: 1rem;
+    display: flex;
+    align-content: center;
+  }
+
+  .span {
+    display: none;
+  }
+
+  /* Home Section */
+  .pupyImg {
+    width: 25rem;
+  }
+
+  /* About Section */
+  .aboutDog {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .image-container {
+    padding: 5px 10px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .svg-text {
+    font-size: 1rem;
+  }
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* why Section */
+  .why-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .text-box {
+    padding: 1rem;
+    padding-left: 2rem;
+    text-align: center;
+    transform: skewX(0);
+  }
+
+  .dogImg {
+    float: none;
+    display: flex;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    transform: skewX(0);
+  }
+
+  p {
+    font-size: 0.9rem;
+    transform: skewX(0);
+  }
+
+  /* Contact Section */
+  .footerText {
+    width: auto;
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .social-icons {
+    margin-left: 5rem;
+  }
+
+  /* Dark Mode Toggle */
+  .theme-switch-wrapper {
+    padding-top: 0.8rem;
+    top: 0;
+  }
+
+  .theme-switch-wrapper span {
+    font-size: 0.5rem;
+  }
+
+  .theme-switch {
+    height: 24px;
+    width: 40px;
+  }
+
+  .slider {
+    left: -10px;
+    bottom: -4px;
+    right: -5px;
+    top: -3px;
+  }
+
+  .slider::before {
+    height: 23px;
+    width: 23px;
+    left: 2px;
+  }
+
+  .fab {
+    font-size: 20px;
+  }
+}
